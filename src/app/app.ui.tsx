@@ -1,11 +1,18 @@
-import { AddTodo, TodoItem, StatusBar } from "../components";
+import { AddTodo, TodoItem, StatusBar, Filter } from "../components";
 import "./app.style.css";
 
 function App() {
+  const handleFilterChange = (active: boolean) => {
+    alert(active);
+  };
+
   return (
     <main>
       <header>
-        <h1>my-todo:</h1>
+        <div>
+          <h1>my-todo:</h1>
+          <Filter active={false} onChange={handleFilterChange} />
+        </div>
         <StatusBar totalItem={5} doneItem={2} />
       </header>
       <section>
