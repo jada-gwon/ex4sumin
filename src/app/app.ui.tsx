@@ -1,4 +1,4 @@
-import { AddTodo, TodoItem } from "../components";
+import { AddTodo, TodoItem, StatusBar } from "../components";
 import "./app.style.css";
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <main>
       <header>
         <h1>my-todo:</h1>
+        <StatusBar totalItem={5} doneItem={2} />
       </header>
       <section>
         <ul>
