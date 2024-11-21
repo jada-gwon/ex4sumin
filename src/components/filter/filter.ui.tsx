@@ -9,8 +9,10 @@ function Filter({ active, onChange }: FilterProps) {
   };
 
   return (
-    <div>
-      <label htmlFor="filter-hide-done">완료 된 일 숨기기</label>
+    <div className="flex items-center justify-end gap-1">
+      <label htmlFor="filter-hide-done" className="text-sm">
+        남은 일만 보기
+      </label>
       <input
         type="checkbox"
         checked={active}
